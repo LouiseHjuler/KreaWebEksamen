@@ -3,7 +3,7 @@
     width: 100%;
     background-image: url(images/bg/Sydney1.webp);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
 }
 
 /*Outback specific CSS*/
@@ -11,7 +11,7 @@
     width: 100%;
     background-image: url(images/bg/outback\ 2.jpg);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
 }
 
 /*Great Barrier Reef specific CSS*/
@@ -19,27 +19,30 @@
     width: 100%;
     background-image: url(images/bg/GreatBarrierReef.jpg);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
 }
 
-.text {
+.headline {
+    padding: 10%;
+}
+
+.headline:active .textBox{
+    display: block;
+}
+
+/* lag så tekstboksen er hidden. vises når det clikkes på en overskrift*/
+.textBox { 
+    display: none;
     height: 50%;
-    width: 40%;
-    padding: 4%;
-    margin: 2%;
+    width: 50%;
+    margin-left: 25%;
+    margin-right:25%;
     margin-top: 15%;
     background-color: antiquewhite;
     opacity: 60%;
-    overflow: hidden;
-    clip-path: polygon(
-        0 10%,
-        10% 0,
-        90% 0,
-        100% 10%,
-        100% 90%,
-        90% 100%,
-        10% 100%,
-        0% 90%,
-        0% 10%
-    )
+    border-radius: 10px;
+}
+
+.text {
+    padding: 5%;
 }
