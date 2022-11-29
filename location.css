@@ -6,6 +6,8 @@
     background-size: cover;
 }
 
+/*BGs are still not fully adaptive. check Aksels kode fra barrier reef for reference.*/
+
 /*Outback specific CSS*/
 .outback {
     width: 100%;
@@ -22,24 +24,14 @@
     background-size: cover;
 }
 
-.headline {
-    padding: 10%;
-}
-
-.headline:active .textBox{
-    display: block;
-}
-
-/* lag så tekstboksen er hidden. vises når det clikkes på en overskrift*/
 .textBox { 
-    display: none;
-    height: 50%;
-    width: 50%;
-    margin-left: 25%;
-    margin-right:25%;
-    margin-top: 15%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-20%);
+    transform: translateX(-50%) translateY(-20%);
     background-color: antiquewhite;
-    opacity: 60%;
+    opacity: 65%;
     border-radius: 10px;
 }
 
