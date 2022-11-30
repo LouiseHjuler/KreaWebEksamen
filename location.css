@@ -1,12 +1,10 @@
 /*Sydney specific CSS*/
 .sydney {
-    width: 100%;
     background-image: url(images/bg/Sydney1.webp);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 }
-
-/*BGs are still not fully adaptive. check Aksels kode fra barrier reef for reference.*/
 
 /*Outback specific CSS*/
 .outback {
@@ -14,6 +12,7 @@
     background-image: url(images/bg/outback\ 2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 }
 
 /*Great Barrier Reef specific CSS*/
@@ -22,6 +21,7 @@
     background-image: url(images/bg/GreatBarrierReef.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 }
 
 .textBox { 
