@@ -41,7 +41,7 @@ body {
     text-align: center;
     background-color: #444545;
     color:black;
-    
+
 }
 
 .dropdown{
@@ -70,7 +70,9 @@ body {
 }
 
 .dropdownContent{
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s linear, opacity 0.3s linear;
     position:absolute;
     top: 66px;
     margin: 5px;
@@ -92,11 +94,13 @@ body {
 }
 
 .dropdown:hover .dropdownContent{
-    display: block;
+    visibility: visible;
+    opacity: 1;
 }
 
 .dropBtn:hover {
     color:#4ceded ;
+
 }
 
 .nav a:hover{
