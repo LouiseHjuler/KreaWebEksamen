@@ -1,0 +1,218 @@
+body {
+  font-family: sans-serif;
+
+  text-align: center;
+
+  background: url(images/BG/barrierreef.jpeg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+
+p em {
+  font-size: large;
+  font-weight: bolder;
+}
+
+/* fishes and shark */
+#nemo {
+  position: absolute;
+  bottom: 15%;
+  right: 1%;
+  width: 7%;
+  height: 7%;
+  animation: swimmingNemo;
+  animation-duration: 9s;
+  animation-delay: 0s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+
+  opacity: 0;
+}
+
+@keyframes swimmingNemo {
+  0% {
+    opacity: 1;
+    right: -15%;
+    bottom: 15%;
+  }
+
+  10% {
+    bottom: 20%;
+  }
+  30% {
+    bottom: 15%;
+  }
+
+  100% {
+    right: 120%;
+    opacity: 1;
+    bottom: 30%;
+  }
+}
+
+#nemo2 {
+  position: absolute;
+  width: 5%;
+  height: 5%;
+  bottom: 37%;
+  right: 21%;
+
+  transform: scaleX(-1);
+  filter: brightness(89%);
+  animation: nemoMovement;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes nemoMovement {
+  10% {
+    bottom: 37%;
+  }
+  50% {
+    bottom: 40%;
+
+    right: 19%;
+  }
+  100% {
+    bottom: 37%;
+  }
+}
+
+#hammerHead {
+  position: absolute;
+  width: 7%;
+  height: 2%;
+  right: -15%;
+  top: 15%;
+  animation: swimmingShark;
+  animation-duration: 19s;
+  animation-delay: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes swimmingShark {
+  10% {
+    right: -15%;
+  }
+  100% {
+    top: -10%;
+    right: 115%;
+    width: 35%;
+    height: 25%;
+  }
+}
+/* div animation and pictures */
+
+#diver {
+  position: absolute;
+  left: 30%;
+  top: 30%;
+  width: 20%;
+  height: 15%;
+  animation: swimmingDiver;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+@keyframes swimmingDiver {
+  10% {
+    top: 30%;
+  }
+  50% {
+    top: 33%;
+  }
+  100% {
+    top: 30%;
+  }
+}
+
+#reef {
+  position: absolute;
+  left: 0%;
+  bottom: -10%;
+  width: 35%;
+  height: 60%;
+  filter: brightness(80%);
+}
+
+#seaUrchin {
+  position: absolute;
+  width: 7%;
+  height: 7%;
+  right: 1%;
+  bottom: 30%;
+  filter: brightness(180%);
+}
+
+/* Infoboxes */
+
+#clownFishInfo {
+  position: absolute;
+  bottom: 34%;
+  right: 18%;
+  width: 11%;
+  height: 15%;
+  overflow: scroll;
+  opacity: 0;
+}
+
+#clownFishInfo:hover {
+  opacity: 0.7;
+  transition: 2s;
+  border: 3px solid #000000;
+  background-color: #ffffff;
+}
+
+#seaUrchinInfo {
+  position: absolute;
+  bottom: 26%;
+  right: 1%;
+  width: 11%;
+  height: 15%;
+  overflow: scroll;
+  opacity: 0;
+}
+
+#seaUrchinInfo:hover {
+  opacity: 0.7;
+  transition: 2s;
+  border: 3px solid #000000;
+  background-color: #ffffff;
+}
+
+#hammerHeadInfo {
+  position: absolute;
+  top: 5%;
+  left: 1%;
+  width: 11%;
+  height: 15%;
+  overflow: scroll;
+  opacity: 0;
+}
+
+#hammerHeadInfo:hover {
+  opacity: 0.7;
+  transition: 2s;
+  border: 3px solid #000000;
+  background-color: #ffffff;
+}
+
+#hammerHeadText {
+  position: absolute;
+  width: 5%;
+  top: 5%;
+  left: 3.5%;
+  color: #4ceded;
+  opacity: 0.7;
+  filter: brightness(70%);
+}

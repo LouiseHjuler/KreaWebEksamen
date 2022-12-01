@@ -1,0 +1,72 @@
+/*Sydney specific CSS*/
+.sydney {
+  background-image: url(images/bg/Sydney6.jpg); /*RENAME HERE*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+p em {
+  font-size: large;
+  font-weight: bolder;
+}
+/*Placement and size of the textboxx relative to the size of the window*/
+.textBox {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-20%);
+  transform: translateX(-50%) translateY(-20%);
+  background-color: antiquewhite;
+  opacity: 70%;
+  border-radius: 10px;
+}
+
+.text {
+  padding: 5%;
+}
+
+.p {
+  padding: 1%;
+}
+
+/*Placement and height for the Bin Chicken photo*/
+.chickenContainer {
+  position: absolute;
+  bottom: 25%;
+  left: 10%;
+}
+.binchicken {
+  height: 10vh;
+}
+
+/*Placement and height for the Possum photo*/
+.possumContainer {
+  position: absolute;
+  bottom: 20%;
+  right: 10%;
+}
+.possum {
+  height: 5vh;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: left;
+}
+
+/*Activates the animation for the Possum*/
+.possum:hover {
+  animation-name: bounce;
+  animation-fill-mode: forwards;
+}
+
+/*Animation for possom to slide to the left and back into place*/
+@keyframes bounce {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

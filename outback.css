@@ -1,0 +1,255 @@
+body {
+  font-family: sans-serif;
+  background: url(images/outback_background.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+p em {
+  font-size: large;
+  font-weight: bolder;
+}
+
+big {
+  font-style: oblique;
+}
+
+/* grassfield over background picture */
+
+#grassfield {
+  position: absolute;
+  left: 0%;
+  bottom: -2%;
+  width: 100%;
+  height: 127%;
+}
+/* sign on the field */
+
+#signPole {
+  position: absolute;
+  width: 0.4%;
+  bottom: 2.5%;
+  left: 31%;
+}
+
+#warningSign {
+  position: absolute;
+  width: 5%;
+  bottom: 15%;
+  left: 28.8%;
+  filter: brightness(75%);
+  filter: grayscale(39%);
+}
+
+/* old tree in background and redfox swinging */
+
+#oldTree {
+  position: absolute;
+  right: 6%;
+  bottom: 21%;
+  width: 22%;
+  height: 29%;
+}
+
+#upsideDownFox {
+  position: absolute;
+  width: 1.5%;
+  height: 4%;
+  right: 21.5%;
+  bottom: 32.5%;
+  filter: brightness(79%);
+  animation: swinging;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  transform-origin: 29% 0;
+}
+@keyframes swinging {
+  0% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(15deg);
+  }
+}
+
+/* animals on the field */
+
+#deathAdder {
+  position: absolute;
+  bottom: 6%;
+  right: 10%;
+  filter: brightness(110%);
+  width: 6%;
+  height: 6%;
+}
+
+#deathAdder:hover {
+  transform: scale(1.2);
+}
+
+#beardedDragon {
+  position: absolute;
+  width: 7%;
+  height: 4.5%;
+  bottom: 14%;
+  left: 57%;
+  filter: brightness(70%);
+}
+
+/* animals in the air */
+
+#flyingFox {
+  position: absolute;
+  top: 30%;
+  right: -15%;
+  width: 2.5%;
+  transform: scaleX(-1);
+  animation: flying;
+  animation-duration: 16s;
+  animation-iteration-count: infinite;
+}
+@keyframes flying {
+  10% {
+    right: -15%;
+  }
+  100% {
+    right: 150%;
+    top: 10%;
+  }
+}
+
+/* kangaroo popping up */
+
+#hiddenKangaroo {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  width: 10%;
+  height: 13%;
+  animation: poppingUp;
+  animation-duration: 8s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+@keyframes poppingUp {
+  10% {
+    bottom: 20%;
+  }
+  50% {
+    bottom: 30%;
+  }
+  100% {
+    bottom: 20%;
+  }
+}
+
+/* tumbleweed rolling over screen */
+
+#tumbleWeed {
+  position: absolute;
+  bottom: 15%;
+  left: 1%;
+  width: 3.5%;
+  animation: rollingTumble;
+  animation-duration: 19s;
+  animation-delay: 3s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+@keyframes rollingTumble {
+  0% {
+    opacity: 1;
+    left: -15%;
+
+    bottom: 15%;
+  }
+  20% {
+    bottom: 20%;
+  }
+  40% {
+    bottom: 15%;
+    rotate: 360deg;
+  }
+  60% {
+    bottom: 20%;
+  }
+  100% {
+    left: 115%;
+    rotate: 720deg;
+    opacity: 1;
+    bottom: 15%;
+  }
+}
+
+/* Info boxes */
+
+#infoBeardedDragon {
+  position: absolute;
+  bottom: 9%;
+  right: 33%;
+  width: 9%;
+  height: 15%;
+  overflow: scroll;
+  opacity: 0;
+}
+#infoBeardedDragon:hover {
+  opacity: 0.7;
+  transition: 2s;
+  border: 3px solid #000000;
+  background-color: #ffffff;
+}
+
+#infoDeathAdder {
+  position: absolute;
+  bottom: 3%;
+  right: 9%;
+  width: 9%;
+  height: 15%;
+  overflow: scroll;
+  opacity: 0;
+}
+#infoDeathAdder:hover {
+  opacity: 0.7;
+  transition: 2s;
+  border: 3px solid #000000;
+  background-color: #ffffff;
+}
+#infoFlyingRedFox {
+  position: absolute;
+  bottom: 24%;
+  right: 17%;
+  width: 9%;
+  height: 15%;
+  overflow: scroll;
+  opacity: 0;
+}
+#infoFlyingRedFox:hover {
+  opacity: 0.7;
+  transition: 2s;
+  border: 3px solid #000000;
+  background-color: #ffffff;
+}
+#infoKangaroo {
+  position: absolute;
+  bottom: 24%;
+  left: 11%;
+  width: 9%;
+  height: 15%;
+  overflow: scroll;
+  opacity: 0;
+}
+#infoKangaroo:hover {
+  opacity: 0.7;
+  transition: 2s;
+  border: 3px solid #000000;
+  background-color: #ffffff;
+}

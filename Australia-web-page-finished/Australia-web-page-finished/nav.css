@@ -1,0 +1,110 @@
+/* navigation bar */
+.nav {
+  position: fixed;
+  top: 1%;
+  width: 48%;
+  max-width: 50%;
+  background-color: #4ceded;
+  margin-left: 25%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  z-index: 3;
+  opacity: 0.7;
+}
+
+/* navigation bar list */
+.nav ul {
+  font-family: sans-serif;
+  font-size: medium;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  text-decoration: none;
+}
+
+.nav ul li {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* navigation bar links */
+.nav > a {
+  display: block;
+  outline: none;
+  height: 20px;
+  margin: 10px;
+  text-decoration: none;
+  text-align: center;
+  background-color: #444545;
+  color: black;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+/* actual drop down button */
+.dropdown .dropBtn {
+  font-family: sans-serif;
+  font-size: medium;
+  display: block;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  margin: 0;
+  cursor: pointer;
+}
+
+.dropdownFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/* pictures showing in dropdown */
+.dropdownContent {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s linear, opacity 0.3s linear;
+  position: absolute;
+  top: 66px;
+  margin: 5px;
+  width: 100vw;
+  left: calc(-50vw + 50%);
+  background-color: #2a5555;
+  border-radius: 20px;
+  box-shadow: #3441cc 0px 4px 0px 0px;
+}
+
+.dropdownContent img {
+  align-items: center;
+  float: left;
+  max-width: 400px;
+  max-width: 300px;
+  overflow: hidden;
+  border-radius: 20px;
+  margin: 2%;
+}
+
+/* Hover elements */
+
+.dropdown:hover .dropdownContent {
+  visibility: visible;
+  opacity: 1;
+}
+
+.dropBtn:hover {
+  color: #4ceded;
+}
+
+.nav a:hover {
+  color: #4ceded;
+}
